@@ -1,0 +1,49 @@
+{
+  "start_time": "2025-03-22T11:35:33.862291",
+  "events": [
+    {
+      "timestamp": "2025-03-22T11:35:40.425948",
+      "type": "workflow_start",
+      "message": "Starting SEO analysis for eatonassoc.com",
+      "metadata": {
+        "website": "eatonassoc.com",
+        "niche": "Managed IT Solutions",
+        "specific_focus": "Cloud Services",
+        "output_dir": "output",
+        "tasks": "full_strategy"
+      }
+    },
+    {
+      "timestamp": "2025-03-22T11:35:40.771288",
+      "type": "import",
+      "message": "Using local SEO Agency implementation",
+      "metadata": {}
+    },
+    {
+      "timestamp": "2025-03-22T11:35:40.771447",
+      "type": "initialization",
+      "message": "Initializing SEO Agency",
+      "metadata": {
+        "website": "eatonassoc.com",
+        "niche": "Managed IT Solutions",
+        "specific_focus": "Cloud Services",
+        "output_dir": "output"
+      }
+    },
+    {
+      "timestamp": "2025-03-22T11:35:40.779429",
+      "type": "workflow_error",
+      "message": "Error during SEO agency execution",
+      "metadata": {
+        "error": "1 validation error for Agent\nknowledge_sources.0\n  Input should be a valid dictionary or instance of BaseKnowledgeSource [type=model_type, input_value=<seo_agency.crew.Director...e object at 0x16f81b9e0>, input_type=DirectoryKnowledgeSource]\n    For further information visit https://errors.pydantic.dev/2.10/v/model_type"
+      }
+    },
+    {
+      "timestamp": "2025-03-22T11:35:40.779652",
+      "type": "workflow_end",
+      "message": "SEO Agency run completed",
+      "metadata": {}
+    }
+  ],
+  "metrics": {}
+}

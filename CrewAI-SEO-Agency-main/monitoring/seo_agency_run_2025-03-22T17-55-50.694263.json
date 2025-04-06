@@ -1,0 +1,40 @@
+{
+  "start_time": "2025-03-22T17:55:50.694263",
+  "events": [
+    {
+      "timestamp": "2025-03-22T17:55:50.694615",
+      "type": "workflow_start",
+      "message": "Starting SEO analysis for https://eatonassoc.com",
+      "metadata": {
+        "website": "https://eatonassoc.com",
+        "niche": "Managed IT Solutions",
+        "specific_focus": "IT Support, Managed IT Services, IT Consulting",
+        "output_dir": "output",
+        "tasks": [
+          "keyword_research"
+        ]
+      }
+    },
+    {
+      "timestamp": "2025-03-22T17:55:52.766800",
+      "type": "import_error",
+      "message": "Error importing local SEO Agency: cannot import name 'before_kickoff' from 'crewai.project' (/Users/mshalabi/.pyenv/versions/3.11.0/lib/python3.11/site-packages/crewai/project/__init__.py)",
+      "metadata": {}
+    },
+    {
+      "timestamp": "2025-03-22T17:55:52.767268",
+      "type": "initialization_error",
+      "message": "Error initializing SEO Agency",
+      "metadata": {
+        "error": "cannot import name 'before_kickoff' from 'crewai.project' (/Users/mshalabi/.pyenv/versions/3.11.0/lib/python3.11/site-packages/crewai/project/__init__.py)"
+      }
+    },
+    {
+      "timestamp": "2025-03-22T17:55:52.767411",
+      "type": "workflow_end",
+      "message": "SEO Agency run completed",
+      "metadata": {}
+    }
+  ],
+  "metrics": {}
+}

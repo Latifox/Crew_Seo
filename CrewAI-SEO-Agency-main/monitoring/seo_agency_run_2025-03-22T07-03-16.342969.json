@@ -1,0 +1,34 @@
+{
+  "start_time": "2025-03-22T07:03:16.342969",
+  "events": [
+    {
+      "timestamp": "2025-03-22T07:03:17.120921",
+      "type": "workflow_start",
+      "message": "Starting SEO analysis for eatonassoc.com",
+      "metadata": {
+        "website": "eatonassoc.com",
+        "niche": "IT Solutions",
+        "specific_focus": "Cloud Services",
+        "output_dir": "output",
+        "tasks": [
+          "competitor_analysis"
+        ]
+      }
+    },
+    {
+      "timestamp": "2025-03-22T07:03:20.527348",
+      "type": "initialization_error",
+      "message": "Error initializing SEO Agency",
+      "metadata": {
+        "error": "function() argument 'code' must be code, not str"
+      }
+    },
+    {
+      "timestamp": "2025-03-22T07:03:20.527394",
+      "type": "workflow_end",
+      "message": "SEO Agency run completed",
+      "metadata": {}
+    }
+  ],
+  "metrics": {}
+}

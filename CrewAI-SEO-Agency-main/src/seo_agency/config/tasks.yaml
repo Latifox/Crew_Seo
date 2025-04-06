@@ -1,0 +1,171 @@
+# Task definitions for the SEO agency crew
+keyword_research_task:
+  description: >
+    Conduct comprehensive keyword research for {website} in the {niche} industry. 
+    Identify high-volume, relevant keywords with reasonable competition. 
+    Consider search intent, question-based queries, and long-tail opportunities.
+    Pay special attention to {specific_focus} if provided.
+  expected_output: >
+    A detailed report with:
+    1. Primary keywords (10-15) with search volume, competition, and search intent
+    2. Secondary keywords (20-30) with similar metrics
+    3. Long-tail opportunities (30-50) organized by topic clusters
+    4. Questions people are asking related to the main keywords
+    5. Strategic recommendations for keyword prioritization
+    Formatted as markdown with clear sections and tables.
+  agent: keyword_researcher
+
+competitor_analysis_task:
+  description: >
+    Analyze the top 5 competitors for {website} in the {niche} industry.
+    Investigate their keyword rankings, content strategy, backlink profile, and on-page optimization.
+    Identify their strengths, weaknesses, and areas where we can outperform them.
+    Pay special attention to their ranking for keywords identified in the keyword research task.
+  expected_output: >
+    A comprehensive competitor analysis report including:
+    1. Overview of each competitor's SEO strategy and performance
+    2. Content gap analysis - topics they're ranking for that we aren't
+    3. Backlink profile comparison - quantity, quality, and diversity
+    4. On-page optimization tactics they're using effectively
+    5. Technical SEO advantages they may have
+    6. Specific opportunities where we can gain an advantage
+    Formatted as markdown with clear sections and visual comparisons where possible.
+  agent: competitor_analyst
+  context:
+    - keyword_research_task
+
+content_strategy_task:
+  description: >
+    Develop a comprehensive content strategy for {website} in the {niche} industry based on 
+    the keyword research and competitor analysis.
+    The strategy should outline a 3-month content plan that addresses identified gaps and opportunities.
+    Consider different content formats, internal linking structure, and content distribution channels.
+  expected_output: >
+    A detailed content strategy document including:
+    1. Content pillars and topic clusters based on keyword research
+    2. Content calendar with proposed topics, keywords, formats, and publication dates
+    3. Content brief template with SEO requirements for content creators
+    4. Internal linking strategy to strengthen topic authority
+    5. Content promotion and distribution plan
+    6. Success metrics and KPIs for content performance
+    Formatted as markdown with clear sections and actionable guidance.
+  agent: content_strategist
+  context:
+    - keyword_research_task
+    - competitor_analysis_task
+
+technical_audit_task:
+  description: >
+    Conduct a thorough technical SEO audit of {website} to identify issues affecting crawling, indexing, and ranking.
+    Analyze site speed, mobile-friendliness, structured data, URL structure, XML sitemaps, robots.txt, and other
+    technical factors. Prioritize issues based on impact and implementation difficulty.
+  expected_output: >
+    A comprehensive technical audit report including:
+    1. Critical issues requiring immediate attention
+    2. Important issues to address in the short term
+    3. Minor issues to fix when resources allow
+    4. Detailed recommendations for fixing each issue
+    5. Prioritized implementation plan with estimated impact
+    Formatted as markdown with clear sections and technical details.
+  agent: technical_auditor
+
+onpage_optimization_task:
+  description: >
+    Create on-page SEO optimization recommendations for key pages on {website} based on
+    the keyword research and technical audit. Focus on title tags, meta descriptions,
+    heading structure, content quality, internal linking, and user experience factors.
+  expected_output: >
+    A detailed on-page optimization report including:
+    1. Page-by-page analysis of current optimization status
+    2. Specific recommendations for title tags and meta descriptions
+    3. Content enhancement suggestions to better match search intent
+    4. Heading structure improvements for better semantic relevance
+    5. Internal linking recommendations to strengthen topical authority
+    6. User experience considerations affecting SEO performance
+    Formatted as markdown with clear sections and actionable recommendations.
+  agent: onpage_optimizer
+  context:
+    - keyword_research_task
+    - technical_audit_task
+
+backlink_strategy_task:
+  description: >
+    Develop a comprehensive backlink acquisition strategy for {website} in the {niche} industry.
+    Analyze current backlink profile, identify high-value link opportunities, and create
+    outreach plans for acquiring quality backlinks. Consider both quick wins and long-term
+    authority building tactics.
+  expected_output: >
+    A detailed backlink strategy document including:
+    1. Analysis of current backlink profile - strengths and weaknesses
+    2. Identified opportunities for new high-quality backlinks
+    3. Content-based link building tactics (skyscraper, resource guides, etc.)
+    4. Relationship-based link building approaches
+    5. Outreach templates and workflows for different link acquisition tactics
+    6. Metrics to track and timeline for implementation
+    Formatted as markdown with clear sections and prioritized recommendations.
+  agent: backlink_strategist
+  context:
+    - competitor_analysis_task
+
+content_creation_task:
+  description: >
+    Create high-quality, SEO-optimized content for {website} based on the content strategy
+    and keyword research. The content should be engaging, valuable to the target audience,
+    and properly optimized for search engines. Focus on {content_topic} for this specific task.
+    {content_prompt}
+  expected_output: >
+    A complete, publication-ready content piece including:
+    1. SEO-optimized title and meta description
+    2. Well-structured content with appropriate heading hierarchy
+    3. Properly incorporated target keywords without keyword stuffing
+    4. Engaging introduction and conclusion
+    5. Relevant internal and external links
+    6. Suggestions for images or visuals to enhance the content
+    Formatted as markdown, ready for publishing.
+  agent: content_creator
+  context:
+    - keyword_research_task
+    - content_strategy_task
+
+analytics_reporting_task:
+  description: >
+    Develop a comprehensive SEO analytics framework and reporting system for {website}.
+    Define key metrics to track, set up appropriate tracking mechanisms, and create
+    report templates for regular performance monitoring. Ensure reports provide actionable
+    insights rather than just data.
+  expected_output: >
+    A complete SEO reporting framework including:
+    1. Key performance indicators (KPIs) to track and why they matter
+    2. Tracking setup recommendations (Google Analytics, Search Console, etc.)
+    3. Weekly, monthly, and quarterly report templates
+    4. Dashboard design with key metrics visualization
+    5. Process for turning data into actionable insights
+    6. Recommendation for sharing reports with stakeholders
+    Formatted as markdown with clear sections and visual examples.
+  agent: analytics_specialist
+  context:
+    - keyword_research_task
+    - content_strategy_task
+
+seo_agency_report_task:
+  description: >
+    Create a comprehensive SEO strategy report for {website} that synthesizes the findings and
+    recommendations from all previous tasks. This should serve as an executive summary and roadmap
+    for implementing the full SEO strategy.
+  expected_output: >
+    A complete SEO strategy report including:
+    1. Executive summary of key findings and recommendations
+    2. Prioritized action items across all SEO areas (technical, on-page, content, backlinks)
+    3. Implementation timeline and resource requirements
+    4. Expected outcomes and performance projections
+    5. Measurement framework for tracking success
+    Formatted as a professional markdown report suitable for client presentation.
+  agent: content_strategist
+  context:
+    - keyword_research_task
+    - competitor_analysis_task
+    - content_strategy_task
+    - technical_audit_task
+    - onpage_optimization_task
+    - backlink_strategy_task
+    - analytics_reporting_task

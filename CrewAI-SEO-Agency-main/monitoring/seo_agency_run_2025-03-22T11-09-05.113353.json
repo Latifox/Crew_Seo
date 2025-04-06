@@ -1,0 +1,32 @@
+{
+  "start_time": "2025-03-22T11:09:05.113353",
+  "events": [
+    {
+      "timestamp": "2025-03-22T11:09:10.763266",
+      "type": "workflow_start",
+      "message": "Starting SEO analysis for eatonassoc.com",
+      "metadata": {
+        "website": "eatonassoc.com",
+        "niche": "Managed IT Solutions",
+        "specific_focus": "",
+        "output_dir": "output",
+        "tasks": "full_strategy"
+      }
+    },
+    {
+      "timestamp": "2025-03-22T11:09:10.987055",
+      "type": "initialization_error",
+      "message": "Error initializing SEO Agency",
+      "metadata": {
+        "error": "function() argument 'code' must be code, not str"
+      }
+    },
+    {
+      "timestamp": "2025-03-22T11:09:10.987201",
+      "type": "workflow_end",
+      "message": "SEO Agency run completed",
+      "metadata": {}
+    }
+  ],
+  "metrics": {}
+}

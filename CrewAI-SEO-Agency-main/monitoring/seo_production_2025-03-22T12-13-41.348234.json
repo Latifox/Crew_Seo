@@ -1,0 +1,46 @@
+{
+  "timestamp": "2025-03-22T12:13:41.348234",
+  "events": [
+    {
+      "timestamp": "2025-03-22T12:13:48.635849",
+      "type": "workflow_start",
+      "message": "Starting SEO Production",
+      "metadata": {
+        "website": "eatonassoc.com",
+        "niche": "Managed IT Solutions",
+        "specific_focus": "Cloud Services",
+        "mode": "single",
+        "task": "keyword_research_task"
+      }
+    },
+    {
+      "timestamp": "2025-03-22T12:13:49.048938",
+      "type": "import",
+      "message": "Using local SEO Agency implementation",
+      "metadata": {}
+    },
+    {
+      "timestamp": "2025-03-22T12:13:49.049401",
+      "type": "initialization",
+      "message": "Creating SEO Agency Crew",
+      "metadata": {}
+    },
+    {
+      "timestamp": "2025-03-22T12:13:49.068819",
+      "type": "error",
+      "message": "Error in SEO Production: 1 validation error for Agent\ntools.1\n  Input should be a valid dictionary or instance of BaseTool [type=model_type, input_value=<seo_agency.crew.SEOAgenc...l object at 0x171c56d80>, input_type=SEOAgencyCrew.__init__.<locals>.FileWriteTool]\n    For further information visit https://errors.pydantic.dev/2.10/v/model_type",
+      "metadata": {}
+    },
+    {
+      "timestamp": "2025-03-22T12:13:49.073474",
+      "type": "workflow_complete",
+      "message": "SEO Production workflow completed",
+      "metadata": {
+        "total_time": 0.43754100799560547,
+        "success": false
+      }
+    }
+  ],
+  "metrics": {},
+  "openlit_enabled": true
+}

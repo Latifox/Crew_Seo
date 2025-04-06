@@ -1,0 +1,51 @@
+{
+  "start_time": "2025-03-22T14:29:57.916826",
+  "events": [
+    {
+      "timestamp": "2025-03-22T14:30:05.368326",
+      "type": "workflow_start",
+      "message": "Starting SEO analysis for eatonassoc.com",
+      "metadata": {
+        "website": "eatonassoc.com",
+        "niche": "Managed IT Solutions",
+        "specific_focus": "Cloud Services",
+        "output_dir": "output",
+        "tasks": [
+          "keyword_research"
+        ]
+      }
+    },
+    {
+      "timestamp": "2025-03-22T14:30:05.633353",
+      "type": "import",
+      "message": "Using local SEO Agency implementation",
+      "metadata": {}
+    },
+    {
+      "timestamp": "2025-03-22T14:30:05.634011",
+      "type": "initialization",
+      "message": "Initializing SEO Agency",
+      "metadata": {
+        "website": "eatonassoc.com",
+        "niche": "Managed IT Solutions",
+        "specific_focus": "Cloud Services",
+        "output_dir": "output"
+      }
+    },
+    {
+      "timestamp": "2025-03-22T14:30:05.661838",
+      "type": "workflow_error",
+      "message": "Error during SEO agency execution",
+      "metadata": {
+        "error": "1 validation error for Agent\ntools.1\n  Input should be a valid dictionary or instance of BaseTool [type=model_type, input_value=<seo_agency.crew.SEOAgenc...l object at 0x1699f3b30>, input_type=SEOAgencyCrew.__init__.<locals>.FileWriteTool]\n    For further information visit https://errors.pydantic.dev/2.10/v/model_type"
+      }
+    },
+    {
+      "timestamp": "2025-03-22T14:30:05.661956",
+      "type": "workflow_end",
+      "message": "SEO Agency run completed",
+      "metadata": {}
+    }
+  ],
+  "metrics": {}
+}

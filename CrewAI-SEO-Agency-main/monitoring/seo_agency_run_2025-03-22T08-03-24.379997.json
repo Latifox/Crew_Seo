@@ -1,0 +1,34 @@
+{
+  "start_time": "2025-03-22T08:03:24.379997",
+  "events": [
+    {
+      "timestamp": "2025-03-22T08:03:30.131774",
+      "type": "workflow_start",
+      "message": "Starting SEO analysis for example.com",
+      "metadata": {
+        "website": "example.com",
+        "niche": "technology blog",
+        "specific_focus": "AI tools",
+        "output_dir": "output",
+        "tasks": [
+          "keyword_research"
+        ]
+      }
+    },
+    {
+      "timestamp": "2025-03-22T08:03:30.400443",
+      "type": "initialization_error",
+      "message": "Error initializing SEO Agency",
+      "metadata": {
+        "error": "function() argument 'code' must be code, not str"
+      }
+    },
+    {
+      "timestamp": "2025-03-22T08:03:30.400550",
+      "type": "workflow_end",
+      "message": "SEO Agency run completed",
+      "metadata": {}
+    }
+  ],
+  "metrics": {}
+}

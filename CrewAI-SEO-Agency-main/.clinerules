@@ -1,0 +1,32 @@
+**Memory Bank Integration Rules:**
+
+CRITICAL: Before ANY task or response:
+1. ALWAYS check active context (`memory://active/context`):
+   - Current project state and mode
+   - Ongoing tasks and their status
+   - Recent decisions and updates
+   - Open questions and concerns
+
+2. ALWAYS review project context (`memory://project/context`):
+   - Technical stack and dependencies
+   - Project guidelines and standards
+   - Architecture principles
+   - Development workflow
+
+3. ALWAYS consult decision log (`memory://decisions`) for:
+   - Previous architectural choices
+   - Established patterns
+   - Technical rationales
+   - Related decisions
+
+4. Update progress tracking:
+   - Mark completed items
+   - Add new tasks identified
+   - Note any blockers found
+
+**Key Guidelines:**
+- NEVER proceed without checking memory bank context
+- ALWAYS maintain consistent project state
+- Record ALL significant technical decisions
+- Track progress in real-time
+- Keep context updated with EVERY change
